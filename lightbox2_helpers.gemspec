@@ -13,12 +13,22 @@ Gem::Specification.new do |s|
     "README"
   ]
   s.files = [
+    "init.rb",
+    "README",
     "lib/lightbox2_helpers.rb",
     "lib/lightbox2_helpers/lightbox2_helpers.rb",
     "lib/lightbox2_helpers/form_helpers.rb",
     "lib/lightbox2_helpers/includes_helper.rb",
-    "public/images/lightbox2_helpers/calendar.gif",
-    "public/javascripts/lightbox2_helpers/lightbox2_helpers.js",
+    "public/images/lightbox2_helpers/bullet.gif",
+    "public/images/lightbox2_helpers/close.gif",
+    "public/images/lightbox2_helpers/closelabel.gif",
+    "public/images/lightbox2_helpers/download-icon.gif",
+    "public/images/lightbox2_helpers/loading.gif",
+    "public/images/lightbox2_helpers/nextlabel.gif",
+    "public/images/lightbox2_helpers/prevlabel.gif",
+    "public/javascripts/lightbox2_helpers/builder.js",
+    "public/javascripts/lightbox2_helpers/effects.js",
+    "public/javascripts/lightbox2_helpers/lightbox.js",
     "public/stylesheets/lightbox2_helpers/lightbox.css"
   ]
   s.has_rdoc = true
