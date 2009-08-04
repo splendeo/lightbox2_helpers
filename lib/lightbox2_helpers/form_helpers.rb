@@ -37,13 +37,17 @@ module Lightbox2Helpers::FormHelpers
       html_options = args.third || {}
     end
     
-    if options.include? :group
+    if options.is_a? Hash and options.include? :group
       html_options[:rel] = "lightbox[#{options[:group]}]"
       options.delete :group
+    elsif html_options.is_a? Hash and html_options.include? :group
+      html_options[:rel] = "lightbox[#{html_options[:group]}]"
+      html_options.delete :group
     else
       html_options[:rel] = "lightbox"
     end
-    if options.include? :title
+    
+    if options.is_a? Hash and options.include? :title
       html_options[:title] = options[:title]
       options.delete :title
     end
