@@ -21,7 +21,7 @@ module Lightbox2Helpers::FormHelpers
   # === :group
   # It will be possible to iterate over links of the same "group" (with "next", "previous" links)
   #
-  #   <%= link_to_lightbox2 :group => "avatars" do %>
+  #   <%= link_to_lightbox2(:group => "avatars") do %>
   #     This is also part of the link <%= image_tag "picture.jpg">
   #   <% end %> 
   #
@@ -37,13 +37,16 @@ module Lightbox2Helpers::FormHelpers
       html_options = args.third || {}
     end
     
-    if options[:group]
+    if options.include? :group
       html_options[:rel] = "lightbox[#{options[:group]}]"
+      options.delete :group
     else
       html_options[:rel] = "lightbox"
     end
-    
-    html_options[:title] = options[:title] if options[:title]
+    if options.include? :title
+      html_options[:title] = options[:title]
+      options.delete :title
+    end
     
     if block_given?
       concat link_to(capture(&block), options, html_options)
