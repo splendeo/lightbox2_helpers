@@ -1,11 +1,15 @@
 // -----------------------------------------------------------------------------------
 //
-//	Lightbox v2.04
-//	by Lokesh Dhakar - http://www.lokeshdhakar.com
+//	Lightbox v2.04 modified for lightbox2_helpers
+//	original version by Lokesh Dhakar - http://www.lokeshdhakar.com
+//  modified by Enrique Garcia - only change was to the /images/ path
 //	Last Modification: 2/9/08
 //
-//	For more information, visit:
+//	For more information about lightbox, visit:
 //	http://lokeshdhakar.com/projects/lightbox2/
+//
+//	For more information about lightbox2_helpers, visit:
+//	http://github.com/splendeo/lightbox2_helpers/
 //
 //	Licensed under the Creative Commons Attribution 2.5 License - http://creativecommons.org/licenses/by/2.5/
 //  	- Free for use in both personal and commercial projects
@@ -46,8 +50,8 @@
 //  Configurationl
 //
 LightboxOptions = Object.extend({
-    fileLoadingImage:        'images/loading.gif',     
-    fileBottomNavCloseImage: 'images/closelabel.gif',
+    fileLoadingImage:        '/images/lightbox2_helpers/loading.gif',     
+    fileBottomNavCloseImage: '/images/lightbox2_helpers/closelabel.gif',
 
     overlayOpacity: 0.8,   // controls transparency of shadow overlay
 
@@ -106,7 +110,7 @@ Lightbox.prototype = {
         //              </div>
         //              <div id="loading">
         //                  <a href="#" id="loadingLink">
-        //                      <img src="images/loading.gif">
+        //                      <img src="/images/lightbox2_helpers/loading.gif">
         //                  </a>
         //              </div>
         //          </div>
@@ -119,7 +123,7 @@ Lightbox.prototype = {
         //              </div>
         //              <div id="bottomNav">
         //                  <a href="#" id="bottomNavClose">
-        //                      <img src="images/close.gif">
+        //                      <img src="/images/lightbox2_helpers/close.gif">
         //                  </a>
         //              </div>
         //          </div>
