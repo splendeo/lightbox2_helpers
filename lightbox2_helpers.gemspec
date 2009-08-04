@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{lightbox2_helpers}
-  s.version = "0.5.5"
+  s.version = "0.5.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Enrique Garcia Cota (egarcia)"]
@@ -25,8 +25,6 @@ Gem::Specification.new do |s|
     "public/images/lightbox2_helpers/loading.gif",
     "public/images/lightbox2_helpers/nextlabel.gif",
     "public/images/lightbox2_helpers/prevlabel.gif",
-    "public/javascripts/lightbox2_helpers/builder.js",
-    "public/javascripts/lightbox2_helpers/effects.js",
     "public/javascripts/lightbox2_helpers/lightbox.js",
     "public/stylesheets/lightbox2_helpers/lightbox.css"
   ]
