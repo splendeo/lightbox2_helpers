@@ -46,7 +46,7 @@ module Lightbox2Helpers::FormHelpers
     html_options[:title] = options[:title] if options[:title]
     
     if block_given?
-      concat link_to(capture(&block), options, html_options), block.binding
+      concat link_to(capture(&block), options, html_options)
     else
       link_to(name, options, html_options)
     end
