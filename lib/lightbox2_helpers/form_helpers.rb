@@ -38,17 +38,17 @@ module Lightbox2Helpers::FormHelpers
     end
     
     if options[:group]
-      html_options.merge!( {:rel => "lightbox[#{options[:group]}]"} )
+      html_options[:rel] = "lightbox[#{options[:group]}]"
     else
-      html_options.merge!( {:rel => "lightbox"} )
+      html_options[:rel] = "lightbox"
     end
     
-    html_options.merge!( {:title => options[:title]} ) if options[:title]
+    html_options[:title] = options[:title] if options[:title]
     
     if block_given?
-      return concat(link_to(capture(&block), options, html_options))
+      concat(link_to(capture(&block), options, html_options))
     else
-      return link_to (name, options, html_options)
+      link_to(name, options, html_options)
     end
   end
 
