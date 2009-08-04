@@ -6,7 +6,7 @@ module Lightbox2Helpers::IncludesHelper
 
   # returns an array of javascripts needed (array)
   def lightbox2_helpers_javascripts()
-    ["lightbox2_helpers/lightbox2_helpers/lightbox.js"]
+    ["lightbox2_helpers/lightbox.js"]
   end
 
   # returns html necessary to load javascript and css to make lightbox2_helpers work
