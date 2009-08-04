@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{lightbox2_helpers}
-  s.version = "0.6.1"
+  s.version = "0.6.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Enrique Garcia Cota (egarcia)"]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{lightbox2_helpers helpers for using lightbox2 on rails}
   s.email = %q{egarcia@splendeo.es}
   s.extra_rdoc_files = [
-    "README"
+    "README.rdoc"
   ]
   s.files = [
     "init.rb",
