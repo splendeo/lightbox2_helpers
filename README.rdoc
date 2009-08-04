@@ -29,5 +29,22 @@ Copy this on config/environment.erb, inside the gems section
 Then execute
     rake gems:install
 
+The first time you initialize your server after this (presumably with script/server) the necesary javascript files and css will be copied to the public/ directory.
+
 ===As a plug-in
 I actually haven't tried this, sorry I don't know how to do it.
+
+==Re-installation
+===As a gem
+Several steps are needed:
+* It is recommended that you uninstall the gem before installing a new version.
+* You must remove this file: public/javascripts/lightbox2_helpers/lightbox.js
+* And then install the new version
+
+Commands for this:
+    sudo gem uninstall splendeo-lightbox2_helpers
+    rm public/javascripts/lightbox2_helpers/lightbox.js
+    rake gems:install
+
+===As a plug-in
+I haven't got that part figured out yet.
