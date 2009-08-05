@@ -6,6 +6,8 @@ This package contains helpers that allows the usage of http://www.huddletogether
 
 Version of lightbox2 used: v2.04
 
+Test application can be found in http://github.com/splendeo/lightbox2_helpers_test
+
 ==Usage
 Copy these two lines inside the head section of your layout file / view
     <%= javascript_include_tag :defaults %>
